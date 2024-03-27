@@ -6,7 +6,7 @@ const Gap = ({height}) => {
 };
 
 export default Gap;
-
+//test//
 const styles = StyleSheet.create({
   gap: height => ({
     height: height,
