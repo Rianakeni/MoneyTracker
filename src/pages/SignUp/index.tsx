@@ -2,10 +2,14 @@ import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {Button, Circle, Gap, PageHeader, TextInput} from '../../components';
 
-const SignUp = () => {
+const SignUp = ({navigation}) => {
   return (
     <ScrollView style={styles.container}>
-      <PageHeader label="Sign Up" backButton={true} />
+      <PageHeader
+        label="Sign Up"
+        backButton={true}
+        onPress={() => navigation.goBack()}
+      />
       <Gap height={24} />
       <View style={styles.contentWrapper}>
         <Gap height={26} />

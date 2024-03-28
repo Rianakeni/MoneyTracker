@@ -1,4 +1,2 @@
-import PageHeader from './PageHeader';
-import TextInput from './TextInput';
-
-export {PageHeader, TextInput};
+export * from './atoms';
+export * from './molecules';
