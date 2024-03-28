@@ -26,7 +26,10 @@ const Home = ({navigation}) => {
           />
         </View>
         <View style={styles.buttongap}>
-          <Button label="Cash on Bank" />
+          <Button
+            label="Cash on Bank"
+            onPress={() => navigation.navigate('CashonBank')}
+          />
         </View>
       </View>
       <Gap height={25} />
