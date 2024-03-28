@@ -2,7 +2,7 @@ import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {Button, PageHeader, Gap} from '../../components';
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <ScrollView style={styles.container}>
       <PageHeader type="withPhoto" />
@@ -20,7 +20,10 @@ const Home = () => {
       <View style={styles.contentWrapper}>
         <Text style={styles.subtext}>Add Transaction</Text>
         <View>
-          <Button label="Cash on Hand" />
+          <Button
+            label="Cash on Hand"
+            onPress={() => navigation.navigate('CashonHand')}
+          />
         </View>
         <View style={styles.buttongap}>
           <Button label="Cash on Bank" />
